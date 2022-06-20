@@ -2,6 +2,19 @@
 
 μclip is a simple, cli-based clipboard that operates on `stdin` and `stdout`. Its primary purpose is to provide a simple clipboard that can interface between `tmux`, `vim`, and system clipboards.
 
+## Install
+
+Compile the uclip source file into a binary using your chosen C compiler. A few examples:
+
+```sh
+$ gcc -Wall -Wextra uclip.c -o uclip && \
+  ln -s uclip /path/to/local/bin
+
+# or:
+$ clang -Wall -Wextra uclip.c -o uclip && \
+  ln -s uclip /path/to/local/bin
+```
+
 ## Usage
 
 ```sh
